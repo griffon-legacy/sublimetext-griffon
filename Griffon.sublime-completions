@@ -1,0 +1,205 @@
+{
+    "scope": "source.groovy.griffon",
+    "completions": [
+        {
+            "trigger": "addonManager"
+        },
+        {
+            "trigger": "artifactManager"
+        },
+        {
+            "trigger": "mvcGroupManager"
+        },
+        {
+            "trigger": "serviceManager"
+        },
+        {
+            "trigger": "addApplicationEventListener(listener)",
+            "contents": "app.addApplicationEventListener(${1:listener})"
+        },
+        {
+            "trigger": "addApplicationEventListener(eventName, listener)",
+            "contents": "app.addApplicationEventListener(${1:eventName}, ${2:listener})"
+        },
+        {
+            "trigger": "removeApplicationEventListener(listener)",
+            "contents": "app.removeApplicationEventListener(${1:listener})"
+        },
+        {
+            "trigger": "removeApplicationEventListener(eventName, listener)",
+            "contents": "app.removeApplicationEventListener(${1:eventName}, ${2:listener})"
+        },
+        {
+            "trigger": "event(eventName)",
+            "contents": "app.event(${1:eventName})"
+        },
+        {
+            "trigger": "event(eventName, params)",
+            "contents": "app.event(${1:eventName}, ${2:params})"
+        },
+        {
+            "trigger": "eventOutsideUI(eventName)",
+            "contents": "app.eventOutsideUI(${1:eventName})"
+        },
+        {
+            "trigger": "eventOutsideUI(eventName, params)",
+            "contents": "app.eventOutsideUI(${1:eventName}, ${2:params})"
+        },
+        {
+            "trigger": "eventAsync(eventName)",
+            "contents": "app.eventAsync(${1:eventName})"
+        },
+        {
+            "trigger": "eventAsync(eventName, params)",
+            "contents": "app.eventAsync(${1:eventName}, ${2:params})"
+        },
+        {
+            "trigger": "addShutdownHandler(handler)",
+            "contents": "app.addShutdownHandler(${1:handler})"
+        },
+        {
+            "trigger": "removeShutdownHandler(handler)",
+            "contents": "app.removeShutdownHandler(${1:handler})"
+        },
+        {
+            "trigger": "getMessage(key)",
+            "contents": "app.getMessage(${1:key})"
+        },
+        {
+            "trigger": "getMessage(key, locale)",
+            "contents": "app.getMessage(${1:key}, ${2:locale})"
+        },
+        {
+            "trigger": "getMessage(key, args)",
+            "contents": "app.getMessage(${1:key}, ${2:args})"
+        },
+        {
+            "trigger": "getMessage(key, args, locale)",
+            "contents": "app.getMessage(${1:key}, ${2:args}, ${3:locale})"
+        },
+        {
+            "trigger": "getMessage(key, defaultMessage)",
+            "contents": "app.getMessage(${1:key})"
+        },
+        {
+            "trigger": "getMessage(key, defaultMessage, locale)",
+            "contents": "app.getMessage(${1:key}, ${2:defaultMessage}, ${3:locale})"
+        },
+        {
+            "trigger": "getMessage(key, args, defaultMessage)",
+            "contents": "app.getMessage(${1:key}, ${2:args}, ${3:defaultMessage})"
+        },
+        {
+            "trigger": "getMessage(key, args, defaultMessage, locale)",
+            "contents": "app.getMessage(${1:key}, ${2:args}, ${3:defaultMessage}, ${4:locale})"
+        },
+        {
+            "trigger": "resolveResource(key)",
+            "contents": "app.resolveResource(${1:key})"
+        },
+        {
+            "trigger": "resolveResource(key, locale)",
+            "contents": "app.resolveResource(${1:key}, ${2:locale})"
+        },
+        {
+            "trigger": "resolveResource(key, args)",
+            "contents": "app.resolveResource(${1:key}, ${2:args})"
+        },
+        {
+            "trigger": "resolveResource(key, args, locale)",
+            "contents": "app.resolveResource(${1:key}, ${2:args}, ${3:locale})"
+        },
+        {
+            "trigger": "resolveResource(key, defaultValue)",
+            "contents": "app.resolveResource(${1:key})"
+        },
+        {
+            "trigger": "resolveResource(key, defaultValue, locale)",
+            "contents": "app.resolveResource(${1:key}, ${2:defaultValue}, ${3:locale})"
+        },
+        {
+            "trigger": "resolveResource(key, args, defaultValue)",
+            "contents": "app.resolveResource(${1:key}, ${2:args}, ${3:defaultValue})"
+        },
+        {
+            "trigger": "resolveResource(key, args, defaultValue, locale)",
+            "contents": "app.resolveResource(${1:key}, ${2:args}, ${3:defaultValue}, ${4:locale})"
+        },
+        {
+            "trigger": "createMVCGroup(mvcName)",
+            "contents": "def (m, v, c) = createMVCGroup(${1:mvcName})"
+        },
+        {
+            "trigger": "createMVCGroup(mvcName, args)",
+            "contents": "def (m, v, c) = createMVCGroup(${1:mvcName}, ${3:args})"
+        },
+        {
+            "trigger": "createMVCGroup(mvcName, mvcId, args)",
+            "contents": "def (m, v, c) = createMVCGroup(${1:mvcName}, ${2:mvcId}, ${3:args})"
+        },
+        {
+            "trigger": "buildMVCGroup(mvcName)",
+            "contents": "MVCGroup group = buildMVCGroup(${1:mvcName})"
+        },
+        {
+            "trigger": "buildMVCGroup(mvcName, args)",
+            "contents": "MVCGroup group = buildMVCGroup(${1:mvcName}, ${2:args})"
+        },
+        {
+            "trigger": "buildMVCGroup(mvcName, mvcId, args)",
+            "contents": "MVCGroup group = buildMVCGroup(${1:mvcName}, ${2:mvcId}, ${3:args})"
+        },
+        {
+            "trigger": "withMVCGroup(mvcName)",
+            "contents": "withMVCGroup(${1:mvcName}) { m, v, c ->\n\t${2:/* body */}\n}"
+        },
+        {
+            "trigger": "withMVCGroup(mvcName, mvcId)",
+            "contents": "withMVCGroup(${1:mvcName}, ${2:mvcId}) { m, v, c ->\n\t${2:/* body */}\n}"
+        },
+        {
+            "trigger": "withMVCGroup(mvcName, mvcId, args)",
+            "contents": "withMVCGroup(${1:mvcName}, ${2:mvcId}, ${3:args}) { m, v, c ->\n\t${2:/* body */}\n}"
+        },
+        {
+            "trigger": "isUIThread()",
+            "contents": "isUIThread()"
+        },
+        {
+            "trigger": "execInsideUIAsync(runnable)",
+            "contents": "execInsideUIAsync(${1:runnable})"
+        },
+        {
+            "trigger": "execInsideUISync(runnable)",
+            "contents": "execInsideUISync(${1:runnable})"
+        },
+        {
+            "trigger": "execOutsideUI(runnable)",
+            "contents": "execOutsideUI(${1:runnable})"
+        },
+        {
+            "trigger": "execFuture(callableOrClosure)",
+            "contents": "def future = execFuture(${1:callableOrClosure})"
+        },
+        {
+            "trigger": "execFuture(executorService, callableOrClosure)",
+            "contents": "def future = execFuture(${1:executorService}, ${2:callableOrClosure})"
+        },
+        {
+            "trigger": "getResourceAsURL(name)",
+            "contents": "getResourceAsURL(${1:name})"
+        },
+        {
+            "trigger": "getResourceAsStream(name)",
+            "contents": "getResourceAsStream(${1:name})"
+        },
+        {
+            "trigger": "getResources(name)",
+            "contents": "getResources(${1:name})"
+        },
+        {
+            "trigger": "newInstance(class, type)",
+            "contents": "newInstance(${1:class}, ${2:type})"
+        }
+    ]
+}

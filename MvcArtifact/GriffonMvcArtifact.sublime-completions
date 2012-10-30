@@ -1,0 +1,20 @@
+{
+    "scope": "source.groovy.griffon.mvcartifact",
+    "completions": [
+        {
+            "trigger": "getResourceAsURL(name)",
+            "contents": "getResourceAsURL(${1:name})"
+        },
+        {
+            "trigger": "getResourceAsStream(name)",
+            "contents": "getResourceAsStream(${1:name})"
+        },
+        {
+            "trigger": "getResources(name)",
+            "contents": "getResources(${1:name})"
+        },
+        {
+            "trigger": griffonClass
+        }
+    ]
+}
