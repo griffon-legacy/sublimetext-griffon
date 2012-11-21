@@ -35,6 +35,10 @@ class GriffonSyntaxCommand(sublime_plugin.EventListener):
             self.set_syntax('Textile', 'Textile')
             return
 
+        if self.ext == '.gdoc':
+            self.set_syntax('GrailsDoc', 'Griffon/Doc')
+            return
+
         if not self.ext == '.groovy':
             return
 
